@@ -45,6 +45,12 @@ jobs:
           echo "keyAlias=${{ secrets.KEY_ALIAS }}" >> android/keystore.properties
           echo "keyPassword=${{ secrets.KEY_PASSWORD }}" >> android/keystore.properties
 
+      # Clean Gradle build
+      - name: Clean Gradle
+        run: |
+          cd android
+          ./gradlew clean
+
       # Build APK
       - name: Build APK
         run: |
