@@ -36,10 +36,10 @@ android {
     ndkVersion rootProject.ext.ndkVersion
     buildToolsVersion rootProject.ext.buildToolsVersion
 
-    namespace "com.awesomeproject"
+    namespace "com.demoproject"
 
     defaultConfig {
-        applicationId "com.awesomeproject"
+        applicationId "com.demoproject"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
